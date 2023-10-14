@@ -30,7 +30,5 @@ public class TaskModel {
     private PriorityTask priority;
 
     private UUID idUser;
-
-    public void setIdUser(UUID idUser) {
-    }
+    
 }

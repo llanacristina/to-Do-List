@@ -19,10 +19,12 @@ public class TaskController {
 
     @PostMapping("/")
     public TaskModel create (@RequestBody TaskModel taskModel, HttpServletRequest request){
+         /* System.out.println("chegou " + request.getAttribute("idUser")); */
+
         var idUser = request.getAttribute("idUser");
-        taskModel.setIdUser((UUID)idUser);
+        taskModel.setIdUser((UUID)idUser); 
         var task = this.taskRepositoy.save(taskModel);
-        return task;
+        return task; 
 
     }
     
