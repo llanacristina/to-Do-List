@@ -29,5 +29,8 @@ public class TaskModel {
     @Enumerated(EnumType.STRING)
     private PriorityTask priority;
 
-    private String username_U;
+    private UUID idUser;
+
+    public void setIdUser(UUID idUser) {
+    }
 }
