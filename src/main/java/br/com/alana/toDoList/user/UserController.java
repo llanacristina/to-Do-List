@@ -24,7 +24,7 @@ public class UserController {
                 return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Usuário ja existe!");
             }
 
-        //Criptografa a senha do usuario para nao aparecer no banco
+        //CRIPTOGRAFA A SENHA DO USUARIO PARA NAO APARECER NO BANCO
         var passwordHashered = BCrypt.withDefaults().
         hashToString(12,userModel.getPassword().toCharArray());
 

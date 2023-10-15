@@ -11,7 +11,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import lombok.Data;
 
-@Data    //codigo mais limpo, faz as funções dos getter's e setter's
+@Data    //CODIGO MAIS LIMPO, FAZ AS FUNÇÕES DOS GETTER'S E SETTER'S
 @Entity(name = "tb_users")
 public class UserModel {
 
